@@ -26,7 +26,7 @@ The dataset was chosen for two key reasons:
 
 ## 🧱 Architecture
 
-GCS (immutable CSV source)
+GCS (immutable CSV source) 
 ↓
 raw_olist (raw BigQuery tables)
 ↓
