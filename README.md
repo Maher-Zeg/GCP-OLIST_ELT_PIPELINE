@@ -1,5 +1,3 @@
-# Olist :  BigQuery Data Warehouse Pipeline
-
 # 🛒 Olist E-Commerce Data Mart — BigQuery
 
 ## 🎯 Business Objective
@@ -21,19 +19,12 @@ The dataset was chosen for two key reasons:
 - It offers **rich data engineering challenges** : multi-table joins,
   missing values, duplicates, inconsistent types, and text fields
   requiring careful handling
-
+  
 ---
 
 ## 🧱 Architecture
 
-GCS (immutable CSV source) 
-↓
-raw_olist (raw BigQuery tables)
-↓
-cleaned_olist (cleaning, typing, enrichment)
-↓
-mart_olist (star schema — analytics & KPIs)
-
+GCS (immutable CSV source) → raw_olist (raw BigQuery tables) → cleaned_olist (cleaning, typing, enrichment) → mart_olist (star schema — analytics & KPIs)
 
 ---
 
@@ -50,6 +41,10 @@ mart_olist (star schema — analytics & KPIs)
 
 ### Dimensions
 - `dim_customer`, `dim_product`, `dim_seller`, `dim_date`
+
+### Reporting
+- **Tableau Dashboard** — Business KPIs visualization
+  (revenue trends, RFM segments, logistics performance, top sellers)
 
 ---
 
